@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>
+        Let's Play Purrdle
+    </title>
+
+    <!--Link style and js-->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="ww.js"></script>
+</head>
+
+<body>
+
+    <div id="gamePage">
+        <!--Nav bar -->
+        <div id="navigation">
+            <div id=cat>
+                <img src=Images/logo2.png id=logo>
+            </div>
+            <ul>
+                <!--individual nav bar items-->
+                <li><a class=navItem href="home.html">Home</a></li>
+            </ul>
+        </div>
+        <!--Dynamically create game board-->
+        <div id="mainGame">
+            <div id="guessBoard"></div>
+            <div id="guessBox">
+                <input id="item" type="text" placeholder="Make a guess">
+                <button id="submit" onclick="guessWord()">GUESS</button>
+            </div>
+        </div>
+
+        <div id="leaderBoard">
+            <div class="introText">
+            </div>
+            <a href="main.html">
+                <button class="button" id="enter" type="button"> PLAY AGAIN </button>
+            </a>
+        </div>
+
+
+
+    </div>
+
+
+</body>
